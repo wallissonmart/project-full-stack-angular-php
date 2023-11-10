@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="alert alert-info d-flex align-items-center mt-2" role="alert">
+        <i class="fas fa-info-circle me-2"></i>
+        Para criar um produto, é necessário criar pelo menos uma categoria antes.
+    </div>
+
+    <button type="button" class="btn btn-primary mt-2 mb-2" (click)="navegarParaAdicionarProduto()">Adicionar
+        Produto</button>
+    <button type="button" class="btn btn-primary mt-2 mb-2 " style="margin-left: 10px;"
+        (click)="navegarParaAdicionarCategoria()">Adicionar Categoria</button>
+
+    <h2 class="mt-1 mb-4">Lista de Produtos</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Data de Vencimento</th>
+                <th scope="col">Quantidade em Estoque</th>
+                <th scope="col">Produto Perecível</th>
+                <th scope="col">Ação</th> <!-- Nova coluna de Ação -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produto of produtos">
+                <td>{{ produto.nome }}</td>
+                <td>{{ produto.categoria_id }}</td>
+                <td>R$ {{ produto.valor }}</td>
+                <td>{{ calcularDataCorrigida(produto.data_vencimento) | date:'dd/MM/yyyy' }}</td>
+                <td>{{ produto.quantidade_estoque }}</td>
+                <td>{{ produto.produto_perecivel ? 'Sim' : 'Não' }}</td>
+                <td class="d-flex gap-2">
+                    <a [routerLink]="['/editar-produto', produto.id]" class="btn btn-warning btn-sm">
+                        <i class="fas fa-edit fa-lg"></i>
+                    </a>
+                    <button type="button" class="btn btn-danger btn-sm" (click)="excluirProduto(produto.id)">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

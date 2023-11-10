@@ -1,0 +1,11 @@
+<div class="container mt-2 p-5">
+    <form [formGroup]="seuForm" (ngSubmit)="adicionarCategoria()">
+        <div class="form-group">
+            <label for="nomeCategoria">Nome da Categoria</label>
+            <input type="text" class="form-control" id="nomeCategoria" formControlName="nome"
+                placeholder="Digite o nome categoria" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-4">Adicionar Produto</button>
+    </form>
+</div>
