@@ -15,7 +15,8 @@ Configuração do Back-end (Laravel e PostgreSQL no Docker)
 Clone o repositório:
 
 git clone https://github.com/wallissonmart/project-full-stack-angular-php.git  
-cd NomeDoProjeto/backend
+
+cd project-full-stack-angular/backend
 
 Copie o arquivo de ambiente:
 
@@ -50,7 +51,7 @@ O backend estará acessível em http://localhost:8000.
 
 Configuração do Front-end
 
-    No diretório principal do projeto, vá para o diretório do frontend:
+No diretório principal do projeto, vá para o diretório do frontend:
 
 cd ../frontend
 
