@@ -33,7 +33,7 @@ Configure as variáveis de ambiente no arquivo .env:
     DB_PORT=5432
     DB_DATABASE=nome_do_banco
     DB_USERNAME=usuario_do_banco
-    DB_PASSWORD=senha_do_banc
+    DB_PASSWORD=senha_do_banco
 
 Inicie os contêineres do Docker:
 
