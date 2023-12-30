@@ -1,7 +1,7 @@
 Projeto CRUD Produto
 
 Este é um projeto Angular com um backend em Laravel (PHP) e PostgreSQL como banco de dados.
-Pré-requisitos
+Pré-requisito
 
 Antes de começar, certifique-se de ter instalado em sua máquina:
 
