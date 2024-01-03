@@ -5,7 +5,7 @@ Pré-requisitos
 
 Antes de começar, certifique-se de ter instalado em sua máquina:
 
-Node.js (com npm)
+Node.js
 Angular CLI (para o frontend)
 PHP (com Composer)
 Docker
