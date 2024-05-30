@@ -41,11 +41,19 @@ docker-compose up -d
 
 Instale as dependências do Laravel:
 
-docker-compose exec app composer install
+composer install
+
+Gere a chave da aplicação:
+
+php artisan key:generate
 
 Execute as migrações e semeie o banco de dados:
 
-docker-compose exec app php artisan migrate --seed
+php artisan migrate
+
+Inicie o servidor:
+
+php artisan serve       
 
 O backend estará acessível em http://localhost:8000.
 
