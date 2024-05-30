@@ -69,8 +69,6 @@ npm install
 
 Inicie o aplicativo:
 
-ng serve
-
-O frontend estará acessível em http://localhost:4200.
+npm run start
 
 Abra um navegador e acesse http://localhost:4200.
