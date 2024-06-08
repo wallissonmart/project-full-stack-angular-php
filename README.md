@@ -14,7 +14,7 @@ Configuração do Back-end (Laravel e PostgreSQL no Docker)
 
 Clone o repositório:
 
-git clone https://github.com/wallissonmart/project-full-stack-angular-php.gi
+git clone https://github.com/wallissonmart/project-full-stack-angular-php.git
 
 cd project-full-stack-angular/backend
 
