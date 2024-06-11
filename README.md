@@ -10,7 +10,7 @@ Angular CLI (para o frontend)
 PHP (com Composer)
 Docker
 
-Configuração do Back-end (Laravel e PostgreSQL no Docker)
+Configuração do Back-end (Laravel e PostgreSQL no Docker
 
 Clone o repositório:
 
